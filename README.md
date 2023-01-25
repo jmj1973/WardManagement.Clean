@@ -63,24 +63,56 @@
     ```    
 
  2. Setup some Clean archtecture projects
-    - WardManagement.Clean.Application (Core)
+    - WardManagement.CleanApplication (Core)
        Class Library .NET 6.0
        ```
        dotnet new classlib -f net6.0 -n WardManagement.Clean.Application -o src/Core/WardManagement.Clean.Application
+       dotnet sln add src/Core/WardManagement.Clean.Application/WardManagement.Clean.Application.csproj
+       dotnet add src/Core/WardManagement.Clean.Application package Microsoft.Extensions.DependencyInjection
+       dotnet add src/Core/WardManagement.Clean.Application package Microsoft.Extensions.Configuration
        ```
     - WardManagement.Clean.Domain (Core)
        Class Library .NET 6.0
        ```
        dotnet new classlib -f net6.0 -n WardManagement.Clean.Domain -o src/Core/WardManagement.Clean.Domain
+       dotnet sln add src/Core/WardManagement.Clean.Domain/WardManagement.Clean.Domain.csproj
+       dotnet add src/Core/WardManagement.Clean.Domain package Microsoft.Extensions.DependencyInjection
+       dotnet add src/Core/WardManagement.Clean.Domain package Microsoft.Extensions.Configuration
        ```       
-    - WardManagement.Clean.Infrastructure (Infrastructure)
+    - WardManagement.CleanInfrastructure (Infrastructure)
        Class Library .NET 6.0
        ```
        dotnet new classlib -f net6.0 -n WardManagement.Clean.Infrastructure -o src/Infrastructure/WardManagement.Clean.Infrastructure
+       dotnet sln add src/Infrastructure/WardManagement.Clean.Infrastructure/WardManagement.Clean.Infrastructure.csproj
+       dotnet add src/Infrastructure/WardManagement.Clean.Infrastructure package Microsoft.Extensions.DependencyInjection
+       dotnet add src/Infrastructure/WardManagement.Clean.Infrastructure package Microsoft.Extensions.Configuration
        ```              
     - WardManagement.Clean.Presistence (Infrastructure)
        Class Library .NET 6.0
        ```
        dotnet new classlib -f net6.0 -n WardManagement.Clean.Presistence -o src/Infrastructure/WardManagement.Clean.Presistence
-       ```       
+       dotnet sln add src/Infrastructure/WardManagement.Clean.Presistence/WardManagement.Clean.Presistence.csproj
+       dotnet add src/Infrastructure/WardManagement.Clean.Presistence package Microsoft.Extensions.DependencyInjection
+       dotnet add src/Infrastructure/WardManagement.Clean.Presistence package Microsoft.Extensions.Configuration
+       ```   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
