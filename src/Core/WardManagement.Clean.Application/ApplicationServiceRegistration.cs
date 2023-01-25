@@ -1,8 +1,13 @@
-﻿namespace WardManagement.Clean.Application;
-public static class ApplicationServiceRegistration
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace WardManagement.Clean.Application
 {
-    public static IServiceCollection ConfigureApplicationService(this IServiceCollection services, IConfiguration configuration)
+    public static class ApplicationServiceRegistration
     {
-        return services;
+       public static IServiceCollection ConfigureApplicationService(this IServiceCollection services, IConfiguration configuration)
+       {
+           return services;
+       }
     }
 }
