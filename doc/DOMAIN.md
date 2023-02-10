@@ -2,9 +2,9 @@
 # Steps
 
 ```
-dotnet add src/Core/WardManagement.Domain package Microsoft.Extensions.
+dotnet add src/Core/WardManagement.Clean.Domain package Microsoft.Extensions.
 DependencyInjection
-dotnet add src/Core/WardManagement.Domain package Microsoft.Extensions.
+dotnet add src/Core/WardManagement.Clean.Domain package Microsoft.Extensions.
 Configuration       
 ```       
 
