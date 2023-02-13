@@ -9,6 +9,7 @@ dotnet add src/Core/WardManagement.Clean.Application package AutoMapper.Extensio
 Microsoft.DependencyInjection
 dotnet add src/Core/WardManagement.Clean.Application package MediatR.Extensions.Microsoft.
 DependencyInjection
+dotnet add src/Core/WardManagement.Clean.Application package FluentValidation
 ```      
    
    - DTOs\Common\BaseDto.cs
