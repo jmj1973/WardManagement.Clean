@@ -8,7 +8,7 @@ dotnet add src/Core/WardManagement.Clean.Domain package Microsoft.Extensions.
 Configuration       
 ```       
 
-2.1. Create the BaseDomainEntity
+3.1. Create the BaseDomainEntity
    - Common\BaseDomainEntity.cs
    - Common\BaseAuditDomainEntity.cs
 
@@ -28,7 +28,7 @@ Configuration
    
 ```
 
-2.2. Create the Presistence Interfaces
+3.2. Create the Presistence Interfaces
    - Presistence\Interfaces\IGenericRepository.cs   
    - Presistence\Interfaces\IUnitOfWork.cs
 
