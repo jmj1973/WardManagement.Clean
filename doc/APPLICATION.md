@@ -20,17 +20,17 @@ dotnet add src/Core/WardManagement.Clean.Application package FluentValidation
    - Profiles\MappingProfile.cs
 
 
-4.1. Create the Application Services Registration
+5.1. Create the Application Services Registration
 
    - ApplicationServicesRegistration.cs
 
-4.2. Add the Domain reference project
+5.2. Add the Domain reference project
 
    ```
    dotnet add src/Core/WardManagement.Clean.Application reference src/Core/WardManagement.Clean.Domain/WardManagement.Clean.Domain.csproj
    ```
 
-4.3. Create the BaseDto
+5.3. Create the BaseDto
     
     - DTOs\Common\BaseDto.cs
 
