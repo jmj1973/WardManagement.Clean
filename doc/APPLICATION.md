@@ -29,7 +29,16 @@ DependencyInjection
    dotnet add src/Core/WardManagement.Clean.Application reference src/Core/WardManagement.Clean.Domain/WardManagement.Clean.Domain.csproj
    ```
 
+4.3. Create the BaseDto
+    
+    - DTOs\Common\BaseDto.cs
 
+    ```
+        public abstract class BaseDto<TType>
+        {
+            public TType Id { get; set; }
+        }
+    ```
 
 
 Request carries a DTO
